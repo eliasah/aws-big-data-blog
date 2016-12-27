@@ -127,6 +127,11 @@ function reuse_cluster {
         --region ${AWS_REGION}
 }
 
+function clean_default {
+    echo "cleaning default configurations files"
+    rm attributes.json bootstrap.json configurations.json instances.json
+}
+
 for FILE in attributes.json bootstrap.json configurations.json instances.json
 do
 if [ ! -f ./${FILE} ]; then
@@ -143,5 +148,4 @@ if [ ! -f ./${FILE} ]; then
 fi
 done
 
-
-# create_cluster | jq '.["ClusterId"]'
+$@

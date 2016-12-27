@@ -28,9 +28,10 @@ Here are some supporting documents:
     │   └── startServer.sh
     ├── commands
     │   ├── commands-cluster.txt // sample commands of creating the cluster with AWS CLI
-    │   └── commands-flights.txt // sample commands of how to run the jar as a
-    |                            // job on ERM/Spark (benchmark) and also
+    │   ├── commands-flights.txt // sample commands of how to run the jar as a
+    |   |                        // job on ERM/Spark (benchmark) and also
     |                            // how to interact with JobServer via CURL
+    │   └── create-cl.sh // create cluster commands samples. 
     ├── jobserver_configs
     │   ├── emr_contexts.conf // context definitions for this project on JobServer
     │   └── emr_v1.6.1.sh // configruation for JobServer
